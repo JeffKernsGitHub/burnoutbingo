@@ -1,1 +1,5 @@
-<app-menu></app-menu>
+<app-menu [showmode]="showmode" (showmodeChange)="showmode=$event"></app-menu>
+<app-game *ngIf="showmode === 'play'"></app-game>
+<app-whatis *ngIf="showmode === 'whatis'"></app-whatis>
+<app-reading *ngIf="showmode === 'reading'"></app-reading>
+<app-author *ngIf="showmode === 'author'"></app-author>

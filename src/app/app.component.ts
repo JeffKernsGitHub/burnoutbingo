@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'burnoutbingo';
+  title = 'Burnout Bingo';
+  showmode: string  = "play"; //play,reading,whatis, author
+
+
+  
 }
